@@ -1,0 +1,250 @@
+.section-Services {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+        background-image: linear-gradient(to right bottom, rgba(190, 237, 152, 0.6), rgba(190, 237, 152, 0.5)),
+        url(../img/services/s6.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.headline-text-services {
+    font-family: 'Abril Fatface';
+    font-size: 50px;
+     text-transform:normal;
+      color: #fff; 
+      font-weight: 600; 
+      letter-spacing: 4px;
+      text-align: center;
+}
+
+.section-Services .composition {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section-Services .composition__photo {
+    width: 45%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem;
+}
+
+.section-Services .composition__photo--p1 {
+    left: 0;
+    top: -2rem;
+}
+
+.section-Services .composition__photo--p2 {
+    right: 0;
+    top: 2rem;
+}
+
+.section-Services .composition__photo--p3 {
+    left: 20%;
+    top: 10rem;
+}
+
+.section-Services .composition__photo:hover {
+    outline: 1rem solid #fff;
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+
+
+
+.section-Services .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+.section-Services .composition1 {
+    position: relative;
+}
+
+.section-Services .composition1__photo {
+    width: 45%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem;
+}
+
+.section-Services .composition1__photo--p4 {
+    left: 0;
+    top: -2rem;
+}
+
+.section-Services .composition1__photo--p5 {
+    right: 0;
+    top: 2rem;
+}
+
+.section-Services .composition1__photo--p6 {
+    left: 20%;
+    top: 10rem;
+}
+
+.section-Services .composition1__photo:hover {
+    outline: 1rem solid #fff;
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.section-Services .composition1:hover .composition1__photo:not(:hover) {
+    transform: scale(0.95);
+}
+
+.service--p1,
+.service--p2,
+.service--p3,
+.service--p4,
+.service--p5,
+.service--p6 {
+    text-align: center;
+    font-size: 15px;
+    /* font-family: 'Rubik',
+        sans-serif; */
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+
+
+@media only screen and (max-width:480px){
+    .section-Services {
+       
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-image: linear-gradient(to right bottom, rgba(190, 237, 152, 0.6), rgba(190, 237, 152, 0.5)),
+            url(../img/services/s6.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .headline-text-services {
+        font-family: 'Abril Fatface';
+        font-size: 40px;
+         text-transform:normal;
+          color: #fff; 
+          font-weight: 600; 
+          letter-spacing: 4px;
+          text-align: center;
+    }
+    .section-Services .composition {
+        position: relative;
+        /* margin-bottom: 20px; */
+        margin-top: 60px;
+    }
+    .section-Services .composition__photo {
+        width: 40%;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+        top: 20;
+    }
+    
+    .section-Services .composition__photo--p1 {
+        left: 7rem;
+        top: -2rem;
+    }
+    
+    .section-Services .composition__photo--p2 {
+        right: 5rem;
+        top: 2rem;
+    }
+    
+    .section-Services .composition__photo--p3 {
+        left: 10%;
+        top: 6rem;
+    }
+    
+    .section-Services .composition__photo:hover {
+        outline: 0.7rem solid #fff;
+        transform: scale(1.03) translateY(-0.3rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 50;
+    }
+    .section-Services .composition:hover .composition__photo:not(:hover) {
+        transform: scale(0.93);
+    }
+
+    .section-Services .composition1 {
+        position: relative;
+        margin-top: 50px;
+    }
+    .subText{
+        margin-top: 300px;
+    }
+    .section-Services .composition1__photo {
+        width: 40%;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+    }
+    
+    .section-Services .composition1__photo--p4 {
+        left: 7rem;
+        top: 5rem;
+    }
+    
+    .section-Services .composition1__photo--p5 {
+        right: 5rem;
+        top: 10rem;
+    }
+    
+    .section-Services .composition1__photo--p6 {
+        left: 10%;
+        top: 13rem;
+    }
+    
+    .section-Services .composition1__photo:hover {
+        outline: 0.8rem solid #fff;
+        transform: scale(1.03) translateY(-0.3rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20;
+    }
+    
+    .section-Services .composition1:hover .composition1__photo:not(:hover) {
+        transform: scale(0.93);
+    }
+    
+}
+  
+  
+  @media only screen and (max-width:768px){
+    
+}
+
+@media only screen and (max-width:998px){
+    
+}
+
+
+@media only screen and (max-width:1180px){
+  
+}
+
+
+  

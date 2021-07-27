@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Products</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+
+  <link rel="stylesheet" href="css/contactus.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/productsCarousel.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/testimonials.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js"></script>
+
+
+
+
+  <style type="text/css">
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+
+
+    .buttons {
+      font-size: 29px;
+      margin-top: -30px;
+      margin-left: 74%;
+      color: #89ce51;
+    }
+
+    .fa:hover {
+      color: #7f807e;
+    }
+
+    .container {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    /*CSS Grid*/
+    .section-grid {
+      display: flex;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .grid-prod {
+      flex: 1 1 auto;
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .prod-grid {
+      flex: 1 1 25%;
+      margin: 1%;
+      border: 2px solid #d7d9d4;
+      border-radius: 10px;
+    }
+
+    .prod-grid img {
+      width: 100%;
+    }
+
+    .prod-grid h3 {
+      text-align: center;
+      /*line-height: 1.5;
+  letter-spacing: 1px;*/
+      font-size: 22px;
+      font-weight: bold;
+      color: #3A5683;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #969997;
+      font-weight: 600;
+      margin: 10px;
+    }
+
+    .button-align {
+      text-align: center;
+    }
+
+    .btn-products {
+      background: #89ce51;
+      border: 1px #89ce51;
+      border-radius: 6px;
+      color: white;
+      font-size: 20px;
+      width: 200px;
+      height: 40px;
+      /* position: left; */
+      /* margin: 10px;  */
+      letter-spacing: 1px;
+      margin: 0 auto;
+      /* float: center; */
+      /* display: inline-block; */
+      /* margin-right: 38px; */
+    }
+
+    .btn-products:hover {
+      background: white;
+      border: 2px solid #89ce51;
+      border-radius: 6px;
+      color: #89ce51;
+      font-size: 20px;
+      width: 200px;
+      height: 40px;
+      position: right;
+      margin: 10px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 38px;
+    }
+
+    .btn-products {
+      float: center;
+    }
+
+    /*CSS List*/
+    .section-list {
+      display: flex;
+      padding: 2% 4%;
+    }
+
+    table {
+      width: 100%;
+      margin: 1px;
+      border: 2px solid #fff;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    table tr td {
+      padding: 10px;
+      border-top: 3px solid #d7d9d4;
+
+
+    }
+
+    tr td img {
+      width: 100%;
+    }
+
+    table h3 {
+      margin-right: 450px;
+    }
+
+    .btn-products {
+      background: #89ce51;
+      border: 1px solid #89ce51;
+      border-radius: 6px;
+      color: white;
+      font-size: 20px;
+      width: 200px;
+      height: 40px;
+      position: right;
+      margin: 10px;
+      margin-top: 10%;
+      letter-spacing: 1px;
+      display: inline-block;
+      font-weight: 400;
+
+    }
+
+    .btn-products:hover {
+      background: white;
+      border: 2px solid #89ce51;
+
+      color: #89ce51;
+
+      font-size: 20px;
+      width: 200px;
+      height: 40px;
+      position: right;
+      margin: 10px;
+      margin-top: 10%;
+      letter-spacing: 1px;
+      display: inline-block;
+      /*margin: 10%; */
+      font-weight: 400;
+
+    }
+
+    .close {
+      float: left;
+      color: #89ce51;
+      font-weight: 600;
+    }
+
+    /* .btn-products{
+  float: right;
+} */
+
+    /* @media (min-width : 320px) and (max-width : 480px) { 
+  .section-list, .btn-products{
+    display: none;
+  }
+} */
+
+
+    .modal {
+      text-align: left;
+    }
+
+    .modal-content {
+      border: none;
+      border-radius: 2px;
+      box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+    }
+
+    .modal-header {
+      border-bottom: 0;
+      padding-top: 15px;
+      padding-right: 26px;
+      padding-left: 26px;
+      padding-bottom: 0px;
+    }
+
+    .modal-title {
+      font-size: 34px;
+    }
+
+    .modal-body {
+      border-bottom: 0;
+      padding-top: 5px;
+      padding-right: 26px;
+      padding-left: 26px;
+      padding-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .modal-body h6 {
+      font-size: 20px;
+      border-bottom: 0;
+      padding-top: 5px;
+      /* padding-right: 26px;
+  padding-left: 26px; */
+      margin-left: 10px;
+      color: #89ce51;
+      font-weight: 600;
+    }
+
+    .modal-body h3 {
+      color: #89ce51;
+      font-weight: 600;
+    }
+
+    .modal-body img {
+      margin-top: 15px;
+      width: 100%;
+      /* padding: 20px; */
+    }
+
+    .modal-footer {
+      border-top: 0;
+      padding-top: 0px;
+      padding-right: 26px;
+      padding-bottom: 26px;
+      padding-left: 26px;
+    }
+
+    .btn-default,
+    .btn-primary {
+      border: none;
+      border-radius: 2px;
+      display: inline-block;
+      color: #89ce51;
+      background-color: #FFF;
+      text-align: center;
+      height: 36px;
+      line-height: 36px;
+      outline: 0;
+      padding: 0 2rem;
+      vertical-align: middle;
+      -webkit-tap-highlight-color: transparent;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      letter-spacing: .5px;
+      transition: .2s ease-out;
+      font-weight: 600;
+    }
+
+    .btn-default:hover {
+      background-color: #FFF;
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      color: #FFF;
+      background-color: #2980B9;
+    }
+
+    .btn-primary:hover {
+      background-color: #2980B9;
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 320px) {
+      .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: auto;
+        -ms-flex-positive: 1;
+        flex-grow: 0;
+        min-width: 0;
+        max-width: 100%;
+      }
+    }
+
+    @media (min-width: 321px) and (max-width: 480px) {
+      .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: auto;
+        -ms-flex-positive: 1;
+        flex-grow: 0;
+        min-width: 0;
+        max-width: 100%;
+      }
+    }
+    .navbar-collapse ul li .btn
+    {
+      box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0.6em;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  align-self: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-right: 80px;
+  padding: 0.6em 0.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 15px;
+    }
+    .fifth {
+  border-color: #3b5d94;
+  border-radius: 0;
+  color: #3b5d94;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+.fifth:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #3b5d94;
+  z-index: -1;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+.fifth:hover{
+  color: #fff;
+}
+.fifth:hover i{
+  color: #fff;
+}
+.fifth:hover:after {
+  width: 110%;
+}
+    /* #back
+    {
+
+      padding:6px 13px ;margin-right: 80px;font-weight:500;border-radius: 20px;
+      border: 2px solid #fff;
+      color:#fff;
+      font-size:15px;
+      background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+      background-position: 100%;
+      background-size: 400%;
+  
+    }
+     #back:hover 
+    {
+      background-position: 0;
+    }  */
+
+
+
+    .wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.button1 {
+  color: #F9FFF6;
+  min-width: 100px;
+  min-height: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  background: #70a842;
+  background: linear-gradient(90deg, #70a842 0%, #70a842 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px #89ce51;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.button1::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(100px + 12px);
+  min-height: calc(40px + 12px);
+  border: 6px solid #a5f861;
+  box-shadow: 0 0 60px #89ce51;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button1:hover, .button1:focus {
+  background-color: #FFF;
+ 
+  color: #a5f861;
+  transform: translateY(-4px);
+}
+
+.button1:hover::before, .button1:focus::before {
+  opacity: 1;
+}
+
+.button1::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #b3fc78;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.button1:hover::after, .button1:focus::after {
+  animation: none;
+  display: none;
+}
+/*****************************button page*********************/
+.button11 {
+  color: #F9FFF6;
+  min-width: 100px;
+  min-height: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  background: #70a842;
+  background: linear-gradient(90deg, #70a842 0%, #70a842 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px #89ce51;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+/*******************************button ends************************/
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+  </style>
+
+</head>
+
+<body>
+  <!-- ----------------------------------NAVBAR BEGINS------------------------------------------------------ -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-mainbg">
+    <img src="img/header/Biddy.png" id="logo" alt="" style="padding-left: 50px;">
+    <!-- <a class="navbar-brand navbar-logo" href="#">Navbar</a> -->
+
+    
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <button class="button11 navbar-toggler" id="back1">HOME</button>
+      <!-- <i class="fa fa-bars" aria-hidden="true" style="color: #F9FFF6"></i> -->
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <!-- <div class="hori-selector">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div> -->
+        <li class="nav-item px-2" style="margin: 10px 5px;">
+          <!-- <button type="button" class="btn fifth" id="back">
+            <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+            
+            <b>Home</b></button> -->
+            <div class="wrap">
+              <button class="button1" id="back">HOME</button>
+            </div>
+        </li>
+        <!-- <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-user-circle-o"
+                            aria-hidden="true"></i>About Us</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-handshake-o"
+                            aria-hidden="true"></i>Services</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-clone"></i>Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-star"
+                            aria-hidden="true"></i>Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fa fa-phone"
+                            aria-hidden="true"></i></i>Contact
+                        Us</a>
+                </li> -->
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ----------------------------------NAVBAR ENDSS------------------------------------------------------ -->
+
+
+  <h1 class="headline-text-products  mt-5"> Our Products</h1><br>
+  <!--Buttons of grid and list-->
+  <!-- <div class="buttons">
+<i class="fa fa-th-large"  id="showdiv1" aria-hidden="true"></i> &nbsp;  
+<i class="fa fa-th-list" id="showdiv2" aria-hidden="true"></i> 
+</div> -->
+
+  <div class="container">
+    <!--Product Grid-->
+    <div id="div1">
+      <section class="section-grid">
+        <div class="grid-prod">
+
+
+          <div class="prod-grid"><img src="img/products/xs-parmanu.jpg" alt="kalita">
+            <h3>Parmanu</h3>
+            <p> Parmanu is 100 % Natural, safer and enriched organic plant bio-stimulant.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal9" role="button" onclick="generateModal(0)"> View
+                details</i></button>
+            </div>
+
+            <!-----------------------------------MODAL START----------------------------------->
+            <div id="costumModal" class="modal" data-easein="expandIn" tabindex="-1" role="dialog"
+              aria-labelledby="costumModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                      ×
+                    </button>
+                  </div>
+                  <div class="modal-body">
+
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-----------------------------------MODAL END----------------------------------->
+          </div>
+
+          <div class="prod-grid"><img src="img/products/xs-biogrow.jpg" alt="kalita">
+            <h3>Bio-Grow</h3>
+            <p> Biddy Bio-Grow is 100 % natural and enriched organic plant bio-stimulant and safe to use.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal2" role="button" data-toggle="modal"
+                onclick="generateModal(1)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-maxo.jpg" alt="kalita">
+            <h3>Maxo</h3>
+            <p> Maxo is a combination of humic acid and nb based latest formula derived from naturals
+              .</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal3" role="button" data-toggle="modal"
+                onclick="generateModal(2)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-killerpower.jpg" alt="kalita">
+            <h3>KillerPower</h3>
+            <p> Killer power is a product based on enhanced bio-technlogical research.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal4" role="button" data-toggle="modal"
+                onclick="generateModal(3)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-tonix.jpg" alt="kalita">
+            <h3>Tonix </h3>
+            <p> Tonix is a biotechnological flowering stimulant that serves as a booster for all crops.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal5" role="button" data-toggle="modal"
+                onclick="generateModal(4)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-mantra.jpg" alt="kalita">
+            <h3>Mantra </h3>
+            <p>Mantra is plant growth stimulator. It is helpful for plants to gain micronutrients from soil.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal12" role="button" data-toggle="modal"
+                onclick="generateModal(5)"> View
+                details</button>
+            </div>
+          </div>
+          <!--------------------------------third row----------------------------------------->
+          <div class="prod-grid"><img src="img/products/xs-crosshd.jpg" alt="kalita">
+            <h3>Cross HD</h3>
+            <p>CROSS HD induces alkaloids lactones and growth promoting enzymes.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal6" role="button" data-toggle="modal"
+                onclick="generateModal(6)"> View
+                details</button>
+
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-shakti.jpg" alt="kalita">
+            <h3>Shakti</h3>
+            <p>SHAKTI 50 G is a growth promoting agent for soil application. It is pure and natural.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal10" role="button" data-toggle="modal"
+                onclick="generateModal(7)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-rango.jpg" alt="kalita">
+            <h3>Rango</h3>
+            <p>RANGO is a silicon based spreader and is a unique product that helps to reduce input cost.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal11" role="button" data-toggle="modal"
+                onclick="generateModal(8)"> View
+                details</button>
+            </div>
+          </div>
+          <!-------------------------------4th row----------------------------------------->
+          <div class="prod-grid"><img src="img/products/xs-ninjapower.jpg" alt="kalita">
+            <h3>Ninja Power</h3>
+            <p>NINJA POWER is a product based on advanced Italian technology.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal20" role="button" data-toggle="modal"
+                onclick="generateModal(9)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-giba.jpg" alt="kalita">
+            <h3>Giba</h3>
+            <p>GIBA is highly sepecialized plant growth ntrient.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal21" role="button" data-toggle="modal"
+                onclick="generateModal(10)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-sticko.jpg" alt="kalita">
+            <h3>Sticko</h3>
+            <p>STICKO has an excellent wetting property and it helps in uniform distribution.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal22" role="button" data-toggle="modal"
+                onclick="generateModal(11)"> View
+                details</button>
+            </div>
+          </div>
+          <!-------------------------------5th row-------------------------------->
+          <div class="prod-grid"><img src="img/products/xs-fungiplus.jpg" alt="kalita">
+            <h3>Fungi Plus</h3>
+            <p>Fungi plus is a highly specialized bio-derivative for fungal infection.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal23" role="button" data-toggle="modal"
+                onclick="generateModal(12)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-panther.jpg" alt="kalita">
+            <h3>Panther</h3>
+            <p>Panther is a product based on enhanced bio-technlogical research. </p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal24" role="button" data-toggle="modal"
+                onclick="generateModal(13)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-chetak.jpg" alt="kalita">
+            <h3>Chetak Super 30</h3>
+            <p>Chetak Super 30 controls weed and insect for cotton, vegetables and other crops.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal25" role="button" data-toggle="modal"
+                onclick="generateModal(14)"> View
+                details</button>
+            </div>
+          </div>
+          <!------------------------------------6th row-------------------------------->
+          <div class="prod-grid"><img src="img/products/xs-cross.jpg" alt="kalita">
+            <h3>Cross</h3>
+            <p>CROSS induces naturally occuring alkaloids lactones and growth promoting enzymes.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal30" role="button" data-toggle="modal"
+                onclick="generateModal(15)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid"><img src="img/products/xs-shera.jpg" alt="kalita">
+            <h3>Shera</h3>
+            <p>SHERA is a product based on advanced bio technlogical research.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal31" role="button" data-toggle="modal"
+                onclick="generateModal(16)"> View
+                details</button>
+            </div>
+          </div>
+
+          <div class="prod-grid"><img src="img/products/xs-microplus.jpg" alt="kalita">
+            <h3>Micro Plus</h3>
+            <p>Micro Plus is a Micronutrient type plant growth nutrient. Micro Plus has longer self life, growth promoting agent.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal30" role="button" data-toggle="modal"
+                onclick="generateModal(18)"> View
+                details</button>
+            </div>
+          </div>
+
+          <!-- <div class="prod-grid"><img src="img/products/xs-manka.jpg" alt="kalita">
+            <h3>Manka</h3>
+            <p>Manka is a micronutrient bio-fertilizer. It has longer self life and is a growth promoting agent useful in root development.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal32" role="button" data-toggle="modal"
+                onclick="generateModal(17)"> View
+                details</button>
+            </div>
+          </div> -->
+
+          
+          <!------------------------------6th row ends------------------------------->
+          <div class="prod-grid"><img src="img/products/xs-vitaramagic.jpg" alt="kalita">
+            <h3>Vitara Magic</h3>
+            <p>Vitara Magic is a highly specialized bio-derivative which gives the excellent action for the fungal infection</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal30" role="button" data-toggle="modal"
+                onclick="generateModal(19)"> View
+                details</button>
+            </div>
+          </div>
+          <div class="prod-grid" style="visibility: hidden;"><img src="" alt="kalita">
+            <h3>Micro Plus</h3>
+            <p>Micro Plus is a Micronutrient type plant growth nutrient. Micro Plus has longer self life, growth promoting agent.</p>
+            <div class="button-align">
+              <button class="btn btn-products" href="#costumModal30" role="button" data-toggle="modal"
+                onclick="generateModal()"> View
+                details</button>
+            </div>
+        </div>
+        <div class="prod-grid" style="visibility: hidden;"><img src="" alt="kalita">
+          <h3>Micro Plus</h3>
+          <p>Micro Plus is a Micronutrient type plant growth nutrient. Micro Plus has longer self life, growth promoting agent.</p>
+          <div class="button-align">
+            <button class="btn btn-products" href="#costumModal30" role="button" data-toggle="modal"
+              onclick="generateModal()"> View
+              details</button>
+          </div>
+      </div>
+      </section>
+    </div>
+    <!--Product List-->
+    <!-- <div id="div2" style="display:none;">
+    <section class="section-list">
+      <table>
+        <tr>
+          <td><img src="img/products/parmanu.jpg" alt="kalita"><td>
+          <td>  <h3>Parmanu </h3>    
+            <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+           <button class="btn-list"> View details</button></td>
+        </tr>
+        <tr>
+          <td width="30%"><img src="img/products/biogrow.jpg" alt="kalita"><td>
+          <td>  <h3>Bio-Grow </h3>    
+            <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+           <button class="btn-list"> View details</button></td>
+        </tr>
+        <tr>
+          <td width="30%"><img src="img/products/maxo.jpg" alt="kalita"><td>
+          <td>  <h3>Maxo </h3>    
+            <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+           <button class="btn-list"> View details</button></td>
+        </tr>
+        <tr>
+          <td width="30%"><img src="img/products/killerpower.jpg" alt="kalita"><td>
+          <td>  <h3>KillerPower </h3>    
+            <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+           <button class="btn-list"> View details</button></td>
+        </tr>
+        <tr>
+          <td width="30%"><img src="img/products/tonix.jpg" alt="kalita"><td>
+          <td>  <h3>Tonix </h3>    
+            <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+           <button class="btn-list"> View details</button></td>
+        </tr>
+        <tr>
+          <td width="30%"><img src="img/products/mantra.jpg" alt="kalita"><td>
+          <td>  <h3>Mantra </h3>    
+            <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+           <button class="btn-list"> View details</button></td>
+        </tr>
+        
+
+        <tr>
+          <td width="30%"><img src="img/products/crosshd.jpg" alt="kalita"><td>
+          <td>  <h3>Cross HD</h3>    
+            <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+           <button class="btn-list"> View details</button></td>
+        </tr>
+        <tr>
+          <td width="30%"><img src="img/products/shakti.jpg" alt="kalita"><td>
+          <td>  <h3>Shakti 50G</h3>    
+            <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+           <button class="btn-list"> View details</button></td>
+        </tr>
+        <tr>
+          <td width="30%"><img src="img/products/rango.jpg" alt="kalita"><td>
+          <td>  <h3>Rango</h3>    
+            <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.</p>
+           <button class="btn-list"> View details</button></td>
+        </tr>
+      </table>
+     </section> 
+  </div> -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!--------------------------------footer starts--------------------------------------------------->
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <img src="img/header/Biddy.png" width="250" height="80" id="logo" alt="" style="padding-left: 40px; ">
+      <!-- <h3 id="footer_sub_head mt-3">Biddy<span style="color: #3A5683;">CropScience</span></h3> -->
+      <p class="footer-links mt-3">
+        <a href="index.html#carousel" class="link-1" id="sub_link1">Home</a>
+        <a href="index.html#aboutUs" id="sub_link2">About Us</a>
+        <a href="index.html#services" id="sub_link3">Services</a>
+        <a href="index.html#products" id="sub_link4">Products</a>
+        <a href="index.html#testimonial" id="sub_link5">Testimonials</a>
+        <a href="index.html#contactUs" id="sub_link6">Contact Us</a>
+      </p><br>
+      <p class="footer-company-name" style="color: white">Biddy CropScience © 2019</p>
+    </div>
+    <div class="footer-center mt-2">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span> Patna Office - Dariyapur Road, Kurthol</span> <span> Pincode -804453(Bihar),India</span></p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p> <span> +918210855126</span></p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#"><span> biddycrop@gmail.com</span></a></p>
+
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span>
+      <p class="footer-content mt-2">Biddy cropscience is a sole proprietorship (individual) trader of bio
+        pesticides,
+        plant growth hormones and bio fertilizers.</p>
+      </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/biddy.cropscience"><i class="fa fa-facebook sweep to right"></i></a>
+        <a href="https://www.linkedin.com/in/biddy-cropscience-9335b7197"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!--------------------------------footer ENDS--------------------------------------------------->
+
+  <script>
+    function generateModal(index) {
+      console.log("HI");
+      $.ajax({
+        url: "./products.php",
+        type: "POST",
+        data: {
+          index: index
+        },
+        success: function (data) {
+          $(".modal-body").html(data);
+          $('.modal').modal('toggle');
+        }
+      });
+    }
+  </script>
+
+</body>
+<script type="text/javascript">
+  $("#back").click(function () {
+    window.location.href = "index.html#carousel";
+  });
+
+  $("#back1").click(function () {
+    window.location.href = "index.html#carousel";
+   
+  });
+  // ---------Responsive-navbar-active-animation-----------
+  function test() {
+    var tabsNewAnim = $('#navbarSupportedContent');
+    var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+    var activeItemNewAnim = tabsNewAnim.find('.active');
+    var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+    var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+    var itemPosNewAnimTop = activeItemNewAnim.position();
+    var itemPosNewAnimLeft = activeItemNewAnim.position();
+    $(".hori-selector").css({
+      "top": itemPosNewAnimTop.top + "px",
+      "left": itemPosNewAnimLeft.left + "px",
+      "height": activeWidthNewAnimHeight + "px",
+      "width": activeWidthNewAnimWidth + "px"
+    });
+    $("#navbarSupportedContent").on("click", "li", function (e) {
+      $('#navbarSupportedContent ul li').removeClass("active");
+      $(this).addClass('active');
+      var activeWidthNewAnimHeight = $(this).innerHeight();
+      var activeWidthNewAnimWidth = $(this).innerWidth();
+      var itemPosNewAnimTop = $(this).position();
+      var itemPosNewAnimLeft = $(this).position();
+      $(".hori-selector").css({
+        "top": itemPosNewAnimTop.top + "px",
+        "left": itemPosNewAnimLeft.left + "px",
+        "height": activeWidthNewAnimHeight + "px",
+        "width": activeWidthNewAnimWidth + "px"
+      });
+    });
+  }
+  $(document).ready(function () {
+    setTimeout(function () {
+      test();
+    });
+  });
+  $(window).on('resize', function () {
+    setTimeout(function () {
+      test();
+    }, 500);
+  });
+  $(".navbar-toggler").click(function () {
+    setTimeout(function () {
+      test();
+    });
+  });
+</script>
+
+<!-- -------------------------------PRODUCT CRIPT-------------------------------------- -->
+<!-- <script type="text/javascript">
+	$(function() {
+    $('#showdiv1').click(function() {
+        $('div[id^=div]').hide();
+        $('#div1').show();
+    });
+    $('#showdiv2').click(function() {
+        $('div[id^=div]').hide();
+        $('#div2').show();
+    });
+
+})
+</script> -->
+<script>
+  $(".modal").each(function (l) { $(this).on("show.bs.modal", function (l) { var o = $(this).attr("data-easein"); "shake" == o ? $(".modal-dialog").velocity("callout." + o) : "pulse" == o ? $(".modal-dialog").velocity("callout." + o) : "tada" == o ? $(".modal-dialog").velocity("callout." + o) : "flash" == o ? $(".modal-dialog").velocity("callout." + o) : "bounce" == o ? $(".modal-dialog").velocity("callout." + o) : "swing" == o ? $(".modal-dialog").velocity("callout." + o) : $(".modal-dialog").velocity("transition." + o) }) });
+</script>
+
+
+</html>

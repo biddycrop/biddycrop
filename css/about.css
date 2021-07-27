@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.headline-text-about{
+    font-family: 'Abril Fatface';
+    font-size: 50px;
+    text-transform:normal;
+    color: #89ce51; 
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.common-IntroText {
+    font-weight: 200;
+    font-size: 1.8rem;
+    line-height: 1rem;
+    color: #000;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   
+}
+
+.about-port {
+    height: 130vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+}
+.about .row img{
+    width: 90%;
+    height: 110%;
+    left: 90px;
+}
+.about .row .col-sm-4{
+    position: relative;
+    padding: 30px;
+}
+.abtSubpara {
+    position: absolute;
+    width: 700px;
+    height: 450px;
+    top: 13%;
+    right: 60px;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+}
+.abtSubpara h6{
+    color: #3A5683; 
+    font-size: 20px;
+    font-weight: 600;
+     font-family: 'Oswald', sans-serif;
+      letter-spacing: 1px;
+      padding: 0 80px;
+      padding-top: 20px;
+}
+.abtSubpara p{
+    color: #76806f;
+    font-weight: 600;
+   line-height: 30px;
+    font-size: 15px;
+    margin-top: 50px;
+    padding: 0 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+$base-color: #303F9F;
+$second-color: #3F51B5;
+$third-color: #FBC02D;
+$site: #303F9F;
+$light: #fff;
+
+
+
+
+
+
+
+.grid {
+ list-style: none;
+ margin-left: 100px;
+}
+
+.gc {
+ box-sizing: border-box;
+ display: inline-block;
+ margin-right: -.25em;
+ min-height: 1px;
+ padding-left: 40px;
+ vertical-align: top;
+}
+
+.gc--1-of-3 {
+ width: 40.33333%;
+}
+
+.gc--2-of-3 {
+ width: 66.66666%;
+}
+
+.naccs {
+ position: relative;
+ max-width: 900px;
+ margin: 20px auto ;
+ margin-bottom: 170px;
+}
+
+.naccs .menu div {
+ padding: 15px 20px 15px 40px;
+ margin-bottom: 19px;
+ color: #6ea641;
+ background:  #89ce51;
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+ cursor: pointer;
+ position: relative;
+ vertical-align: middle;
+ font-weight: 700;
+ font-size: 20px;
+ transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.naccs .menu div:hover {
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.naccs .menu div span.light {
+ height: 10px;
+ width: 10px;
+ position: absolute;
+ top: 24px;
+ left: 15px;
+ background-color: #6ea641;
+ border-radius: 100%;
+ transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.naccs .menu div.active span.light {
+ background-color:  #3A5683 ;
+ left: 0;
+ height: 100%;
+ width: 7px;
+ top: 0;
+ border-radius: 0;
+}
+
+.naccs .menu div.active {
+ color: #fff;
+ padding: 15px 20px 15px 20px; 
+}
+
+ul.nacc {
+ position: relative;
+ height: 300px;
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+ul.nacc li {
+ opacity: 0;
+ transform: translateX(50px);
+ position: absolute;
+ list-style: none;
+ transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+ul.nacc li.active {
+ transition-delay: .3s;
+ z-index: 2;
+ opacity: 1;
+ transform: translateX(0px);
+
+}
+
+ul.nacc li p {
+ margin: 0;
+ 
+}
+#aboutImage{
+    height: 470px; 
+    width: 550px; 
+    margin-left: 630px; 
+    margin-top: -750px;
+}
+
+
+
+ @media (max-width: 320px) {
+   .about-port {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #fff;
+        position: relative;
+    }
+    .about .row .col-sm-4 {
+       text-align: center;
+       top: 70px;
+    }
+    .abtSubpara{
+        background-color: #fff;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        top: 20px;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        position: static;
+        padding-bottom: 20px;
+    }
+    .abtSubpara h6{
+        color: #3A5683; 
+        font-size: 15px;
+        font-weight: 300;
+         font-family: 'Oswald', sans-serif;
+          letter-spacing: 1px;
+          padding: 0 40px;
+          padding-top: 10px;
+    }
+    .abtSubpara p{
+        color: #76806f;
+        font-weight: 600;
+       line-height: 20px;
+        font-size: 15px;
+        margin-top: 30px;
+        padding: 0 40px;
+    
+    }
+    .abtContents{
+        width: 330px;
+        height: 300px;
+    }
+    .headline-text-about{
+        font-family: 'Abril Fatface';
+        font-size: 30px;
+        text-transform:normal;
+        color: #89ce51; 
+        font-weight: 600;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+    #aboutImages{
+        text-align: center;
+    }
+    .about .row img{
+        display: inline-block;
+    }
+    .gc--1-of-3 {
+       width: 100%;
+       margin-top: 50px;
+     }
+    .gc--2-of-3 {
+    width: 100%;
+    }
+       .naccs {
+        position: relative;
+        max-width: 900px;
+        margin: 20px auto;
+        margin-bottom: 170px;
+        left: -40px;
+    }
+       ul.nacc {
+        position: relative;
+        height: 900px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+       
+       }
+       #abtSecondImage
+       {
+           text-align: center;
+       }
+       #aboutImage{
+          height: 280px; 
+        width: 250px; 
+        position: absolute;
+        left: -600px; 
+        display: inline-block;
+      top: 400px;
+      
+    }
+    
+    
+} 
+@media (min-width: 321px) and (max-width: 480px) {
+    .about-port {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #fff;
+        position: relative;
+    }
+    .about .row .col-sm-4 {
+       text-align: center;
+       top: 70px;
+    }
+    .abtSubpara{
+        background-color: #fff;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+        top: 20px;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        position: static;
+        padding-bottom: 20px;
+    }
+    .abtSubpara h6{
+        color: #3A5683; 
+        font-size: 15px;
+        font-weight: 300;
+         font-family: 'Oswald', sans-serif;
+          letter-spacing: 1px;
+          padding: 0 40px;
+          padding-top: 10px;
+    }
+    .abtSubpara p{
+        color: #76806f;
+        font-weight: 600;
+       line-height: 20px;
+        font-size: 15px;
+        margin-top: 30px;
+        padding: 0 40px;
+    
+    }
+    .abtContents{
+        width: 330px;
+        height: 300px;
+    }
+    .headline-text-about{
+        font-family: 'Abril Fatface';
+        font-size: 30px;
+        text-transform:normal;
+        color: #89ce51; 
+        font-weight: 600;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+    #aboutImages{
+        text-align: center;
+    }
+    .about .row img{
+        display: inline-block;
+    }
+    .gc--1-of-3 {
+       width: 100%;
+       margin-top: 120px;
+     }
+    .gc--2-of-3 {
+    width: 100%;
+    }
+    #subContentAbout
+    {
+        text-align: center;
+    }
+       .naccs {
+        position: relative;
+        max-width: 900px;
+        margin: 20px auto;
+        margin-bottom: 170px;
+        left: -37px;
+    }
+       ul.nacc {
+        position: relative;
+        height: 900px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+       
+       }
+       #aboutImage{
+         height: 300px; 
+        width: 300px; 
+        position: absolute;
+        left: -600px;
+      top: 320px;
+    }
+    
+}
+
+@media (min-width:481px) and (max-width:768px){
+    .about .row img {
+        width: 100%;
+        height: 120%;
+        left: 90px;
+    }
+    .about-port {
+        height: 60vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #fff;
+        position: relative;
+    }
+    .abtSubpara {
+        position: absolute;
+        width: 450px;
+        height: 330px;
+        top: 13%;
+        right: 30px;
+        background-color: #fff;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    }
+    .abtSubpara h6{
+        color: #3A5683; 
+        font-size: 15px;
+        font-weight: 600;
+         font-family: 'Oswald', sans-serif;
+          letter-spacing: 1px;
+          padding: 0 40px;
+          padding-top: 10px;
+    }
+    .abtSubpara p{
+        color: #76806f;
+        font-weight: 600;
+       line-height: 20px;
+        font-size: 15px;
+        margin-top: 30px;
+        padding: 0 40px;
+    }
+    .gc--1-of-3 {
+        width: 70%;
+        margin-top: 150px;
+      
+        }
+        
+        .gc--2-of-3 {
+         width: 70%;
+        }
+        .naccs {
+         position: relative;
+         max-width: 900px;
+         margin: 20px auto;
+         margin-bottom: 170px;
+         left: -40px;
+     }
+        ul.nacc {
+         position: relative;
+         height: 400px;
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+        }
+        #aboutImage{
+            height: 370px; 
+            width: 380px; 
+            margin-left: 350px; 
+            margin-top: -800px;
+        }    
+} 
+@media (min-width:769px) and (max-width:1180px)
+{
+    .about .row img {
+        width: 100%;
+        height: 120%;
+        left: 90px;
+    }
+    .about-port {
+        height: 60vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #fff;
+        position: relative;
+    }
+    .abtSubpara {
+        position: absolute;
+        width: 450px;
+        height: 330px;
+        top: 13%;
+        right: 30px;
+        background-color: #fff;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    }
+    .abtSubpara h6{
+        color: #3A5683; 
+        font-size: 15px;
+        font-weight: 600;
+         font-family: 'Oswald', sans-serif;
+          letter-spacing: 1px;
+          padding: 0 40px;
+          padding-top: 10px;
+    }
+    .abtSubpara p{
+        color: #76806f;
+        font-weight: 600;
+       line-height: 20px;
+        font-size: 15px;
+        margin-top: 30px;
+        padding: 0 40px;
+    }
+    .gc--1-of-3 {
+        width: 70%;
+        margin-top: 100px;
+      
+        }
+        
+        .gc--2-of-3 {
+         width: 70%;
+        }
+        .naccs {
+         position: relative;
+         max-width: 900px;
+         margin: 20px auto;
+         margin-bottom: 170px;
+         left: -40px;
+     }
+        ul.nacc {
+         position: relative;
+         height: 400px;
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+        }
+        #aboutImage{
+            height: 400px; 
+            width: 420px; 
+            margin-left: 550px; 
+            margin-top: -800px;
+        }    
+}
+  
+
+
+  

@@ -1,0 +1,356 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////////
+      //   Default Modal Styles   //
+  ////////////////////////////////////////////////////////////////////////////////////////////// */
+/*   This is the background overlay   */
+.backgroundOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  z-index: 101;
+  display: none;
+}
+/*   This is the Popup Window   */
+.delayedPopupWindow {
+  display: none;
+  position: fixed;
+  width: auto;
+  max-width: 600px;
+  height: 390px;
+  top: 50%;
+  left: 50%;
+  margin-left: -290px;
+  margin-top: -180px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  z-index: 102;
+  padding: 10px 20px;
+}
+/*   This is the closing button  */
+#btnClose {
+  width: 100%;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #ff8419;
+  font-size: 30px;
+  padding-left: 453px;
+  margin-top: -24px;
+}
+/*   This is the closing button hover state  */
+#btnClose:hover {
+  color: #fa2e35;
+}
+/*   This is the description headline and paragraph for the form   */
+#delayedPopup > div.formDescription {
+  float: left;
+  display: block;
+  width: 44%;
+  padding: 1% 3%;
+  font-size: 18px;
+  color: #666;
+  clear: left;
+}
+/*   This is the styling for the form's headline   */
+#delayedPopup > div.formDescription h2 {
+  color: #444444;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+/* 
+  ////////// MailChimp Signup Form //////////////////////////////
+  */
+
+/*   This is the signup form body  */
+#delayedPopup #mc_embed_signup {
+  float: left;
+  width: 47%;
+  padding: 1%;
+  display: block;
+  font-size: 16px;
+  color: #666;
+  margin-left: 1%;
+}
+/*   This is the styling for the signup form inputs  */
+#delayedPopup #mc-embedded-subscribe-form input {
+  width: 420px;
+  height: 40px;
+  font-size: 18px;
+  padding: 3px;
+  margin-left: 17px;
+  margin-bottom: 20px;
+  border: 1px solid #c4c0c0;
+  border-radius: 20px;
+}
+/*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
+#delayedPopup #mc-embedded-subscribe-form input:hover {
+  border: solid 2px #89ce51;
+  /* box-shadow: 0 1px 3px #AAAAAA; */
+}
+/*   This is the styling for the signup form inputs when they are focused  */
+#delayedPopup #mc-embedded-subscribe-form input:focus {
+  border: solid 2px #89ce51 !important;
+  box-shadow: none;
+}
+/*   This is the styling for the signup form submit button  */
+#delayedPopup #mc-embedded-subscribe {
+  width: 50% !important;
+  height: 60px;
+  padding: 10px auto 100px auto;
+  margin-top: 15px;
+
+  background: #ff8419;
+  border: none;
+  color: #fff;
+  margin-bottom: -10px;
+}
+/*   This is the styling for the signup form submit button hover state  */
+#delayedPopup #mc-embedded-subscribe:hover {
+  background: #fa7e11;
+  color: #fff;
+  box-shadow: none !important;
+  cursor: pointer;
+  border: 2px solid #ff8419;
+}
+
+#delayedPopup h2 {
+  color: #89ce51;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 30px;
+}
+#delayedPopup h4 {
+  color: #b5afaf;
+  font-size: 15px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+#delayedPopup .modal-header {
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: none;
+  /* border-top-left-radius: calc(.3rem - 1px); */
+  /* border-top-right-radius: calc(.3rem - 1px); */
+}
+::placeholder {
+  padding-left: 10px;
+}
+
+.modal-content {
+  border-radius: 20px;
+  margin-top: 120px;
+  border: none;
+}
+
+/* RESPONSIVENESS */
+@media (min-width: 320px) {
+  #delayedPopup #mc-embedded-subscribe-form input {
+    width: 260px;
+    height: 40px;
+    font-size: 18px;
+    padding: 3px;
+    /* margin-left: 17px; */
+    margin-bottom: 20px;
+    border: 1px solid #c4c0c0;
+    border-radius: 20px;
+  }
+  /*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
+  #delayedPopup #mc-embedded-subscribe-form input:hover {
+    border: solid 2px #89ce51;
+    /* box-shadow: 0 1px 3px #AAAAAA; */
+  }
+  /*   This is the styling for the signup form inputs when they are focused  */
+  #delayedPopup #mc-embedded-subscribe-form input:focus {
+    border: solid 2px #89ce51 !important;
+    border-radius: 20px !important;
+    box-shadow: none;
+  }
+  #btnClose {
+    position: absolute;
+    right: 25px;
+    width: 100%;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #ff8419;
+    font-size: 25px;
+    padding-left: 453px;
+    margin-top: -24px;
+  }
+  /*   This is the closing button hover state  */
+  #btnClose:hover {
+    color: #fa2e35;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  #delayedPopup #mc-embedded-subscribe-form input {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    padding: 3px;
+    /* margin-left: 17px; */
+    margin-bottom: 20px;
+    border: 1px solid #c4c0c0;
+    border-radius: 20px;
+  }
+  /*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
+  #delayedPopup #mc-embedded-subscribe-form input:hover {
+    border: solid 2px #89ce51;
+    /* box-shadow: 0 1px 3px #AAAAAA; */
+  }
+  /*   This is the styling for the signup form inputs when they are focused  */
+  #delayedPopup #mc-embedded-subscribe-form input:focus {
+    border: solid 2px #89ce51 !important;
+    border-radius: 20px !important;
+    box-shadow: none;
+  }
+  #btnClose {
+    position: absolute;
+    right: 25px;
+    width: 100%;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #ff8419;
+    font-size: 25px;
+    padding-left: 453px;
+    margin-top: -24px;
+  }
+  /*   This is the closing button hover state  */
+  #btnClose:hover {
+    color: #fa2e35;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  #delayedPopup #mc-embedded-subscribe-form input {
+    width: 420px;
+    height: 40px;
+    font-size: 18px;
+    padding: 3px;
+    margin-left: 17px;
+    margin-bottom: 20px;
+    border: 1px solid #c4c0c0;
+    border-radius: 20px;
+  }
+  /*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
+  #delayedPopup #mc-embedded-subscribe-form input:hover {
+    border: solid 2px #89ce51;
+    /* box-shadow: 0 1px 3px #AAAAAA; */
+  }
+  /*   This is the styling for the signup form inputs when they are focused  */
+  #delayedPopup #mc-embedded-subscribe-form input:focus {
+    border: solid 2px #89ce51 !important;
+    box-shadow: none;
+  }
+  /*   This is the closing button  */
+  #btnClose {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #ff8419;
+    font-size: 30px;
+    /* padding-left: 453px; */
+    margin-top: -24px;
+  }
+  /*   This is the closing button hover state  */
+  #btnClose:hover {
+    color: #fa2e35;
+  }
+}
+@media (min-width: 769px) and (max-width: 1180px) {
+  #delayedPopup #mc-embedded-subscribe-form input {
+    width: 420px;
+    height: 40px;
+    font-size: 18px;
+    padding: 3px;
+    margin-left: 17px;
+    margin-bottom: 20px;
+    border: 1px solid #c4c0c0;
+    border-radius: 20px;
+  }
+  /*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
+  #delayedPopup #mc-embedded-subscribe-form input:hover {
+    border: solid 2px #89ce51;
+    /* box-shadow: 0 1px 3px #AAAAAA; */
+  }
+  /*   This is the styling for the signup form inputs when they are focused  */
+  #delayedPopup #mc-embedded-subscribe-form input:focus {
+    border: solid 2px #89ce51 !important;
+    box-shadow: none;
+  }
+  /*   This is the closing button  */
+  #btnClose {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #ff8419;
+    font-size: 30px;
+    padding-left: 453px;
+    margin-top: -24px;
+  }
+  /*   This is the closing button hover state  */
+  #btnClose:hover {
+    color: #fa2e35;
+  }
+}
+
+@media (min-width: 1180px) {
+  #delayedPopup #mc-embedded-subscribe-form input {
+    width: 420px;
+    height: 40px;
+    font-size: 18px;
+    padding: 3px;
+    margin-left: 17px;
+    margin-bottom: 20px;
+    border: 1px solid #c4c0c0;
+    border-radius: 20px;
+  }
+  /*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
+  #delayedPopup #mc-embedded-subscribe-form input:hover {
+    border: solid 2px #89ce51;
+    /* box-shadow: 0 1px 3px #AAAAAA; */
+  }
+  /*   This is the styling for the signup form inputs when they are focused  */
+  #delayedPopup #mc-embedded-subscribe-form input:focus {
+    border: solid 2px #89ce51 !important;
+    box-shadow: none;
+  }
+  /*   This is the closing button  */
+  #btnClose {
+    position: absolute;
+    right: 0px !important;
+    width: 100%;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #ff8419;
+    font-size: 30px;
+    padding-left: 463px;
+    margin-top: -24px;
+  }
+  /*   This is the closing button hover state  */
+  #btnClose:hover {
+    color: #fa2e35;
+  }
+}
